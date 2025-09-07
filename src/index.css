@@ -30,9 +30,25 @@ body {
 
 .friends-list {
   background-color: lightcoral;
-  height: 20rem;
   width: 25rem;
   margin-bottom: 1rem;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.sidebar li img {
+  border-radius: 50%;
+}
+
+.sidebar .friend-info {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
 }
 
 .form-add-friend {

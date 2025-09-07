@@ -1,3 +1,13 @@
-export default function FriendsList() {
-  return <div className="friends-list">Friends List</div>;
+import Friend from "./Friend";
+
+export default function FriendsList({ initialFriends }) {
+  return (
+    <div className="friends-list">
+      {initialFriends.map((friend) => (
+        <ul>
+          <Friend friend={friend} />
+        </ul>
+      ))}
+    </div>
+  );
 }
