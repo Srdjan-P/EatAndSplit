@@ -22,10 +22,18 @@ body {
 
 .app {
   min-height: fit-content;
-  background-color: lightblue;
   display: flex;
   gap: 1rem;
   padding: 1rem;
+}
+
+.btn {
+  max-width: 8rem;
+  border-radius: 0.3rem;
+  background-color: var(--color-medium);
+  line-height: 1.8rem;
+  border: none;
+  font-weight: bold;
 }
 
 .friends-list {
@@ -65,12 +73,56 @@ body {
 }
 
 .form-add-friend {
-  background-color: lightgreen;
-  height: 12rem;
+  background-color: var(--color-lightest);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 0.2rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-add-friend input {
+  line-height: 1.7rem;
+  border: none;
+  border-radius: 0.2rem;
+  width: 13rem;
+  text-align: center;
 }
 
 .form-split-bill {
-  background-color: lightgoldenrodyellow;
-  height: 25rem;
-  width: 20rem;
+  background-color: var(--color-lightest);
+  width: 25rem;
+  padding: 2rem;
+  margin-left: 1.5rem;
+}
+
+.form-split-bill h2 {
+  margin-bottom: 2rem;
+}
+
+.form-split-bill .space-between {
+  margin-bottom: 1rem;
+}
+
+.form-split-bill input {
+  width: 7rem;
+  line-height: 2rem;
+  border: none;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+
+.form-split-bill select {
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 0.2rem;
 }
