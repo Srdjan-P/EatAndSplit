@@ -1,3 +1,15 @@
+import FormAddFriend from "./components/FormAddFriend";
+import FormSplitBill from "./components/FormSplitBill";
+import FriendsList from "./components/FriendsList";
+
 export default function App() {
-  return <h1>Eat & Split!</h1>;
+  return (
+    <div className="app">
+      <div className="sidebar">
+        <FriendsList />
+        <FormAddFriend />
+      </div>
+      <FormSplitBill />
+    </div>
+  );
 }
