@@ -1,9 +1,9 @@
 import Friend from "./Friend";
 
-export default function FriendsList({ initialFriends }) {
+export default function FriendsList({ friends }) {
   return (
     <div className="friends-list">
-      {initialFriends.map((friend) => (
+      {friends.map((friend) => (
         <ul key={friend.name}>
           <Friend friend={friend} />
         </ul>
