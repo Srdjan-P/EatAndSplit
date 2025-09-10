@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function Friend({ friend, selectedFriend, onSelection }) {
   const isSelected = selectedFriend?.id === friend?.id;
 
@@ -23,9 +25,9 @@ export default function Friend({ friend, selectedFriend, onSelection }) {
           <p className="">You and {friend.name} are even.</p>
         )}
       </div>
-      <button onClick={() => onSelection(friend)}>
+      <Button onClick={() => onSelection(friend)}>
         {isSelected ? "Close" : "Select"}
-      </button>
+      </Button>
     </li>
   );
 }
