@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function FormAddFriend({ onAddFriend }) {
   const [name, setName] = useState("");
@@ -40,7 +41,9 @@ export default function FormAddFriend({ onAddFriend }) {
           onChange={(e) => setImage(e.target.value)}
         />
       </div>
-      <button className="btn">Add</button>
+      <div className="float-right">
+        <Button>Add</Button>
+      </div>
     </form>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormAddFriend from "./components/FormAddFriend";
 import FormSplitBill from "./components/FormSplitBill";
 import FriendsList from "./components/FriendsList";
+import Button from "./components/Button";
 
 const initialFriends = [
   {
@@ -65,7 +66,11 @@ export default function App() {
           onSelection={handleSelection}
         />
         {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
-        <button onClick={handleShowAddFriend}>Add friend</button>
+        <div className="float-right" style={{ marginRight: "0.6rem" }}>
+          <Button onClick={handleShowAddFriend}>
+            {showAddFriend ? "Close" : "Add friend"}
+          </Button>
+        </div>
       </div>
       {selectedFriend && (
         <FormSplitBill
