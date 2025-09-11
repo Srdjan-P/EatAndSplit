@@ -282,6 +282,10 @@ button {
     max-width: 100vw;
   }
 
+  .headline {
+    margin: 25vh 1rem 1rem 1rem;
+  }
+
   .sidebar {
     max-width: 100vw;
   }
