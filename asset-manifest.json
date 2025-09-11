@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/EatAndSplit/static/css/main.1dce70fd.css",
+    "main.css": "/EatAndSplit/static/css/main.b502eb45.css",
     "main.js": "/EatAndSplit/static/js/main.2cff8782.js",
     "index.html": "/EatAndSplit/index.html",
-    "main.1dce70fd.css.map": "/EatAndSplit/static/css/main.1dce70fd.css.map",
+    "main.b502eb45.css.map": "/EatAndSplit/static/css/main.b502eb45.css.map",
     "main.2cff8782.js.map": "/EatAndSplit/static/js/main.2cff8782.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dce70fd.css",
+    "static/css/main.b502eb45.css",
     "static/js/main.2cff8782.js"
   ]
 }
