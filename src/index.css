@@ -274,10 +274,6 @@ button {
 }
 
 @media screen and (max-width: 920px) {
-  body {
-    height: 100%;
-  }
-
   .app {
     display: flex;
     flex-direction: column-reverse;
@@ -305,5 +301,9 @@ button {
     margin-left: 0;
     max-width: 100vw;
     box-sizing: border-box;
+  }
+
+  .form-split-bill h2 {
+    text-align: center;
   }
 }
