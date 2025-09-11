@@ -1,3 +1,7 @@
 export default function Button({ children, onClick }) {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <div className="button-container">
+      <button onClick={onClick}>{children}</button>
+    </div>
+  );
 }

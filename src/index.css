@@ -1,7 +1,7 @@
 :root {
-  --color-lightest: rgb(213, 223, 255);
-  --color-light: rgb(200, 212, 252);
-  --color-medium: rgb(174, 187, 227);
+  --color-lightest: rgb(204, 214, 248);
+  --color-light: rgb(184, 198, 247);
+  --color-medium: rgb(151, 164, 205);
   --color-dark: rgb(119, 133, 174);
 }
 
@@ -29,34 +29,57 @@ body {
 
 .headline {
   box-shadow: 0 0 10px 5px var(--color-medium);
-  border-radius: 2rem;
-  display: flex;
-  text-align: center;
+  border-radius: 1rem;
   animation: appear 0.5s ease-in backwards;
 }
 
 h1 {
   padding: 15px 25px;
-  background-color: var(--color-dark);
-  box-shadow: inset 0 0 10px 5px var(--color-medium);
   color: #fff;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
   cursor: pointer;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(130, 145, 193),
+    rgb(171, 190, 255),
+    rgb(130, 145, 193),
+    rgb(75, 85, 117),
+    rgb(130, 145, 193),
+    rgb(171, 190, 255),
+    rgb(130, 145, 193)
+  );
+  background-size: 400% 100%;
+  animation: moveGradient 7s linear infinite alternate;
+}
+
+.button-container {
+  animation: slideIn 0.5s ease forwards;
 }
 
 button {
   width: 7rem;
   border-radius: 0.3rem;
-  background-color: var(--color-medium);
   line-height: 1.8rem;
   border: none;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.08);
-  background-color: var(--color-dark);
   color: #fff;
-  animation: slideIn 0.5s ease forwards;
+  background: linear-gradient(
+    to right,
+    rgb(130, 145, 193),
+    rgb(171, 190, 255),
+    rgb(130, 145, 193),
+    rgb(75, 85, 117),
+    rgb(130, 145, 193),
+    rgb(171, 190, 255),
+    rgb(130, 145, 193)
+  );
+  background-size: 400% 100%;
+  animation: moveGradient 10s linear infinite alternate;
 }
 
 .friends-list {
@@ -234,5 +257,14 @@ button {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
