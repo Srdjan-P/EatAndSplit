@@ -97,7 +97,7 @@ button {
   align-items: center;
   padding: 0.8rem;
   margin-bottom: 0.8rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   background-color: white;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.08);
   opacity: 0;
@@ -159,7 +159,7 @@ button {
   font-weight: 600;
   padding: 10px;
   border-radius: 0.3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.08);
 
   animation: slideDown 0.3s ease-in-out backwards;
@@ -173,14 +173,14 @@ button {
 .form-add-friend input {
   line-height: 1.7rem;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   width: 13rem;
   text-align: center;
 }
 
 .form-split-bill {
   background-color: var(--color-lightest);
-  width: 25rem;
+  width: fit-content;
   height: fit-content;
   padding: 2rem;
   margin-left: 1.5rem;
@@ -195,7 +195,7 @@ button {
   color: #fff;
   box-shadow: 0 0 5px 3px var(--color-medium);
   padding: 10px;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   background-color: var(--color-medium);
 }
 
@@ -207,7 +207,7 @@ button {
   width: 7rem;
   line-height: 2rem;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   text-align: center;
 }
 
@@ -216,7 +216,7 @@ button {
   height: 2rem;
   text-align: center;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 @keyframes appear {
@@ -277,10 +277,11 @@ button {
   .app {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     padding: 0;
     max-width: 100vw;
     margin: auto;
-    gap: 0.5rem;
+    gap: 0;
     overflow-x: hidden;
   }
 
@@ -290,7 +291,7 @@ button {
 
   .sidebar {
     max-width: 92%;
-    margin: 1rem 1rem;
+    margin: 1rem;
   }
 
   .friends-list {
@@ -298,9 +299,10 @@ button {
   }
 
   .form-split-bill {
-    margin: 0;
+    margin: 1rem;
+    margin-bottom: 0;
     max-width: 100vw;
-    min-width: 100vw;
+    min-width: fit-content;
     box-sizing: border-box;
   }
 
